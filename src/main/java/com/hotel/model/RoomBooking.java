@@ -19,7 +19,10 @@ public class RoomBooking {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long BookingId;
 	private Long guestId;
-	
+	private Long guestId1;
+	private Long guestId2;
+	private Long guestId3;
+	private Long guestId4;
 	private String name;
 	private Long contactno;
 	
@@ -100,6 +103,48 @@ public class RoomBooking {
 	}
 	public RoomBooking() {
 		super();
+	}
+	public Long getGuestId1() {
+		return guestId1;
+	}
+	public void setGuestId1(Long guestId1) {
+		this.guestId1 = guestId1;
+	}
+	public Long getGuestId2() {
+		return guestId2;
+	}
+	public void setGuestId2(Long guestId2) {
+		this.guestId2 = guestId2;
+	}
+	public Long getGuestId3() {
+		return guestId3;
+	}
+	public void setGuestId3(Long guestId3) {
+		this.guestId3 = guestId3;
+	}
+	public Long getGuestId4() {
+		return guestId4;
+	}
+	public void setGuestId4(Long guestId4) {
+		this.guestId4 = guestId4;
+	}
+	public RoomBooking(Long bookingId, Long guestId, Long guestId1, Long guestId2, Long guestId3, Long guestId4,
+			String name, Long contactno, Long roomId, String roomNo, int status, LocalDateTime localDate,
+			LocalDateTime updateDate) {
+		super();
+		BookingId = bookingId;
+		this.guestId = guestId;
+		this.guestId1 = guestId1;
+		this.guestId2 = guestId2;
+		this.guestId3 = guestId3;
+		this.guestId4 = guestId4;
+		this.name = name;
+		this.contactno = contactno;
+		this.roomId = roomId;
+		RoomNo = roomNo;
+		this.status = status;
+		this.localDate = localDate;
+		this.updateDate = updateDate;
 	}
 	
 	

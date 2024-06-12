@@ -1,12 +1,9 @@
 package com.hotel.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
-
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -35,22 +32,22 @@ public class Room {
 		this.roomId = roomId;
 	}
 	public String getRoomNo() {
-		return RoomNo;
+		return this.RoomNo;
 	}
 	public void setRoomNo(String roomNo) {
-		RoomNo = roomNo;
+		this.RoomNo = roomNo;
 	}
 	public String getRoomRate() {
 		return RoomRate;
 	}
 	public void setRoomRate(String roomRate) {
-		RoomRate = roomRate;
+		this.RoomRate = roomRate;
 	}
 	public int getStatus() {
 		return Status;
 	}
 	public void setStatus(int status) {
-		Status = status;
+		this.Status = status;
 	}
 	public LocalDateTime getLocalDate() {
 		return localDate;
@@ -68,9 +65,9 @@ public class Room {
 			LocalDateTime updateDate) {
 		super();
 		this.roomId = roomId;
-		RoomNo = roomNo;
-		RoomRate = roomRate;
-		Status = status;
+		this.RoomNo = roomNo;
+		this.RoomRate = roomRate;
+		this.Status = status;
 		this.localDate = localDate;
 		this.updateDate = updateDate;
 	}
